@@ -10,12 +10,12 @@ const Header = () => {
             <p className='text-3x1 md:text-5xl text-white font-semibold leading-tight md:leading-tight lg:leadingtight'>
                 Đặt lịch hẹn với các <br />bác sĩ đáng tin cậy
             </p>
-            <div>
-                <img src={assets.group_profiles} alt="" />
-                <p>Hãy lựa chọn một bác sĩ từ trang web của chúng tôi và đặt lịch hẹn <br /> ngay hôm nay để nhận được sự tư vấn và chăm sóc tốt nhất! </p>
+            <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
+                <img className='w-28' src={assets.group_profiles} alt="" />
+                <p>Hãy lựa chọn một bác sĩ từ trang web của chúng tôi và đặt lịch hẹn <br className='hidden sm:block' /> ngay để nhận được sự tư vấn và chăm sóc tốt nhất! </p>
             </div>
-            <a href="">
-                Đặt Lịch <img src={assets.arrow_icon} alt="" />
+            <a href="#speciality" className='flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>
+                Đặt Lịch <img className='w-3' src={assets.arrow_icon} alt="" />
             </a>
         </div>
 
