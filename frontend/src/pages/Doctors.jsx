@@ -23,17 +23,17 @@ const Doctors = () => {
 
   return (
     <div>
-      <p>Brouse through the doctors specialist</p>
-      <div>
-        <div>
-          <p>General physician</p>
-          <p>Gynecologist</p>
-          <p>Dermatologist</p>
-          <p>Pediatricians</p>
-          <p>Neurologist</p>
-          <p>Gastroenterologist</p>
+      <p className='text-gray-600'>Brouse through the doctors specialist</p>
+      <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
+        <div className='flex flex-col gap-4 text-sm text-gray-600'>
+          <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer`}>General physician</p>
+          <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer`}>Gynecologist</p>
+          <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer`}>Dermatologist</p>
+          <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer`}>Pediatricians</p>
+          <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer`}>Neurologist</p>
+          <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer`}>Gastroenterologist</p>
         </div>
-        <div>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 gap-y-6 '>
           {
             filterDoc.map((item,index)=>(
               <div onClick={()=>navigate(`/appointment/${item._id}`)} className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500' key={index}>
